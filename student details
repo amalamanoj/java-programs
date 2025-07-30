@@ -1,0 +1,38 @@
+class Demo{
+	String name;
+	int rollNumber;
+	int m1,m2,m3;
+	float avg;
+	
+	Demo(String name,int rollNumber,int m1,int m2,int m3){
+		this.name = name;
+		this.rollNumber = rollNumber ;
+		this.m1 =m1;
+		this.m2 =m2;
+		this.m3 =m3;
+	}
+	public void calculateAverage() {
+		avg = (m1+m2+m3)/3;
+	}
+	public void displayDetails() {
+		System.out.println("Name:"+name);
+		System.out.println("Roll Number:"+rollNumber);
+		System.out.println("Mark1:"+ m1 + "\tMark2:"+ m2 + "\tMark3:"+ m3);
+		System.out.println("Average mark:"+avg);
+	}
+
+}
+public class StudentDemo {
+	public static void main(String[]args){
+		Demo std = new Demo("Demo",1,56,34,23);
+		std.calculateAverage();
+		std.displayDetails();
+		Demo std1 = new Demo("Test",2,67,45,34);
+		std1.calculateAverage();
+		std1.displayDetails();
+		
+		
+		
+	}
+
+}
