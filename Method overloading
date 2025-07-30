@@ -1,4 +1,4 @@
-package javaLab;
+package javalab;
 class shape  {
 	public int area(int side) {
 		System.out.println("Square");
@@ -15,7 +15,7 @@ class shape  {
 		
 }
 
-public class Method_overloading {
+public class methodOverloading {
 	public static void main(String [] args) {
 		shape shape=new shape();
 		shape.area(10);
@@ -25,5 +25,4 @@ public class Method_overloading {
                
 	}
 	
-
 }
